@@ -60,11 +60,21 @@
                 h3{
                     font-weight: 500;
                 }
+                @media (max-width:767px) {
+                    h3{
+                        font-size: 17px;
+                    }
+                }
                 div:last-of-type p{
                     color: blue;
                     cursor: pointer;
                 }
                 
+            }
+            .product_right_zone{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
             }
         }
         @media (max-width:567px) {

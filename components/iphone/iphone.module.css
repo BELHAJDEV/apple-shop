@@ -583,6 +583,9 @@
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .iphone_container .bag_review button, .iphone_container_of .bag_review button, .iphone_container .bag_review_of button, .iphone_container_of .bag_review_of button {
+    min-width: 50%;
+  }
 }
 
 @media (max-width: 767px) {

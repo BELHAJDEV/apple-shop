@@ -164,7 +164,7 @@ function Navbar(){
                 : <span className={classes.empty}>You bag is empty</span>}
                 
                 
-                <span onClick={()=> router.push('/Bag')}>
+                <span onClick={()=> router.push('/shop/bag')}>
                     <FontAwesomeIcon icon={faBagShopping} />
                     Bag {state.bag.length > 0 ? `(${state.bag.length})` : ''}
                 </span>
