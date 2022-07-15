@@ -467,6 +467,7 @@
     top: 58px;
   }
   .nav_container .right_menu, .nav_container .right_menu_of {
+    padding: 10px 20px;
     top: 58px;
     width: 100%;
     height: 50vh;
