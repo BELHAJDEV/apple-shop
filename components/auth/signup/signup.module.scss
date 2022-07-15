@@ -1,0 +1,88 @@
+.login_container{
+    margin-top: 58px;
+    position: relative;
+    width: 100%;
+    min-height: 90vh;
+    // height: fit-content;
+    transition: .3s;
+    background-color: #eee;
+    // min-height: 170vh;
+    max-width: 100vw;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    form{
+        // min-width: 90%;
+        // max-width: 90%;
+        position: relative;
+        z-index: 1;
+        background-color: rgb(254, 252, 252);
+        margin: 20px auto;
+        border-radius: 10px;
+        // display: flex;
+        // flex-direction: column;
+        // align-items: center;
+        text-align: center;
+        padding: 20px;
+
+        > div{
+            display: flex;
+            flex-direction: column;
+            margin: 10px 0;
+            label{
+                text-align: start;
+                margin: 10px 0;
+            }
+            input{
+                padding:8px 10px;
+                border: none;
+                outline: none;
+                font-size: 18px;
+                border-radius: 5px;
+                background-color: #eee;
+            }
+        }
+        a{
+            font-size: 15px;
+            color: blue;
+            text-align: center ;
+        }
+
+        button{
+            border: none;
+            outline: none;
+            background-color: blue;
+            color: white;
+            cursor: pointer;
+            padding: 8px 12px;
+            width: 90%;
+            margin: 20px auto;
+            font-size: 16px;
+            border-radius: 7px;
+        }
+    }
+
+    @media (max-width:567px) {
+        form{
+            min-width: 90%;
+        }
+    }
+    @media (max-width:767px) {
+        form{
+            min-width: 80%;
+        }
+    }
+    @media (max-width:992px) {
+        form{
+            min-width: 70%;
+        }
+    }
+    @media (min-width:993px) {
+        form{
+            min-width: 50%;
+        }
+    }
+}

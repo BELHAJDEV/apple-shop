@@ -1,0 +1,605 @@
+.iphone_container, .iphone_container_of {
+  margin-top: 58px;
+  position: relative;
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  -webkit-transition: .3s;
+  transition: .3s;
+  max-width: 100vw;
+  overflow: hidden;
+}
+
+.iphone_container header, .iphone_container_of header {
+  position: fixed;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid #eee;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: white;
+  width: 100%;
+  height: 45px;
+}
+
+.iphone_container header h3, .iphone_container_of header h3 {
+  font-weight: 400;
+  color: #2f2f2f;
+}
+
+.iphone_container header p, .iphone_container_of header p {
+  color: #7f7d7d;
+}
+
+@media (max-width: 767px) {
+  .iphone_container header h3, .iphone_container_of header h3 {
+    text-align: center;
+  }
+  .iphone_container header p, .iphone_container_of header p {
+    display: none;
+  }
+}
+
+.iphone_container .section, .iphone_container_of .section, .iphone_container .section_of, .iphone_container_of .section_of {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  min-height: -webkit-fit-content;
+  min-height: -moz-fit-content;
+  min-height: fit-content;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+@media (min-width: 890px) {
+  .iphone_container .section .item_image, .iphone_container_of .section .item_image, .iphone_container .section_of .item_image, .iphone_container_of .section_of .item_image {
+    margin-right: 30px !important;
+  }
+}
+
+.iphone_container .section .product_options, .iphone_container_of .section .product_options, .iphone_container .section_of .product_options, .iphone_container_of .section_of .product_options {
+  margin-top: 70px;
+  max-width: 500px;
+}
+
+.iphone_container .section .product_options > span, .iphone_container_of .section .product_options > span, .iphone_container .section_of .product_options > span, .iphone_container_of .section_of .product_options > span {
+  color: brown;
+}
+
+.iphone_container .section .product_options h1, .iphone_container_of .section .product_options h1, .iphone_container .section_of .product_options h1, .iphone_container_of .section_of .product_options h1 {
+  font-weight: 500;
+  font-size: 25px;
+}
+
+.iphone_container .section .product_options > p, .iphone_container_of .section .product_options > p, .iphone_container .section_of .product_options > p, .iphone_container_of .section_of .product_options > p {
+  max-width: 350px;
+}
+
+.iphone_container .section .product_options a, .iphone_container_of .section .product_options a, .iphone_container .section_of .product_options a, .iphone_container_of .section_of .product_options a {
+  color: blue;
+  font-size: 15px;
+}
+
+.iphone_container .section .product_options h3, .iphone_container_of .section .product_options h3, .iphone_container .section_of .product_options h3, .iphone_container_of .section_of .product_options h3 {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.iphone_container .section .product_options .model, .iphone_container_of .section .product_options .model, .iphone_container .section_of .product_options .model, .iphone_container_of .section_of .product_options .model {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 2px solid blue;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px 15px;
+  border-radius: 10px;
+  min-width: 400px;
+  overflow: hidden;
+}
+
+.iphone_container .section .product_options .model .product_name, .iphone_container_of .section .product_options .model .product_name, .iphone_container .section_of .product_options .model .product_name, .iphone_container_of .section_of .product_options .model .product_name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  justify-items: center;
+}
+
+.iphone_container .section .product_options .model .product_name > p, .iphone_container_of .section .product_options .model .product_name > p, .iphone_container .section_of .product_options .model .product_name > p, .iphone_container_of .section_of .product_options .model .product_name > p {
+  font-size: 15px;
+  color: gray;
+}
+
+.iphone_container .section .product_options .model .product_name > p sup, .iphone_container_of .section .product_options .model .product_name > p sup, .iphone_container .section_of .product_options .model .product_name > p sup, .iphone_container_of .section_of .product_options .model .product_name > p sup {
+  font-size: 10px;
+}
+
+.iphone_container .section .product_options .model .price, .iphone_container_of .section .product_options .model .price, .iphone_container .section_of .product_options .model .price, .iphone_container_of .section_of .product_options .model .price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #545252;
+}
+
+@media (max-width: 567px) {
+  .iphone_container .section .product_options .model, .iphone_container_of .section .product_options .model, .iphone_container .section_of .product_options .model, .iphone_container_of .section_of .product_options .model {
+    margin: 0 auto;
+  }
+}
+
+.iphone_container .section .product_options hr, .iphone_container_of .section .product_options hr, .iphone_container .section_of .product_options hr, .iphone_container_of .section_of .product_options hr {
+  margin-top: 20px;
+  background-color: #bdbbbb;
+  height: 1px;
+  border: none;
+}
+
+.iphone_container .section .product_options .colors, .iphone_container_of .section .product_options .colors, .iphone_container .section_of .product_options .colors, .iphone_container_of .section_of .product_options .colors {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 400px;
+}
+
+.iphone_container .section .product_options .colors > div, .iphone_container_of .section .product_options .colors > div, .iphone_container .section_of .product_options .colors > div, .iphone_container_of .section_of .product_options .colors > div {
+  -webkit-transition: .3s;
+  transition: .3s;
+  cursor: pointer;
+  padding-top: 8px;
+  border: 2px solid #d5d4d4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify !important;
+      -ms-flex-pack: justify !important;
+          justify-content: space-between !important;
+  min-width: 180px;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.iphone_container .section .product_options .colors > div span, .iphone_container_of .section .product_options .colors > div span, .iphone_container .section_of .product_options .colors > div span, .iphone_container_of .section_of .product_options .colors > div span {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  padding: 0;
+}
+
+.iphone_container .section .product_options .colors > div > p, .iphone_container_of .section .product_options .colors > div > p, .iphone_container .section_of .product_options .colors > div > p, .iphone_container_of .section_of .product_options .colors > div > p {
+  font-size: 15px;
+}
+
+.iphone_container .section .product_options .colors > div.green_on, .iphone_container_of .section .product_options .colors > div.green_on, .iphone_container .section_of .product_options .colors > div.green_on, .iphone_container_of .section_of .product_options .colors > div.green_on,
+.iphone_container .section .product_options .colors > div.green_on:hover,
+.iphone_container_of .section .product_options .colors > div.green_on:hover,
+.iphone_container .section_of .product_options .colors > div.green_on:hover,
+.iphone_container_of .section_of .product_options .colors > div.green_on:hover,
+.iphone_container .section .product_options .colors > div.pink_on,
+.iphone_container_of .section .product_options .colors > div.pink_on,
+.iphone_container .section_of .product_options .colors > div.pink_on,
+.iphone_container_of .section_of .product_options .colors > div.pink_on,
+.iphone_container .section .product_options .colors > div.pink_on:hover,
+.iphone_container_of .section .product_options .colors > div.pink_on:hover,
+.iphone_container .section_of .product_options .colors > div.pink_on:hover,
+.iphone_container_of .section_of .product_options .colors > div.pink_on:hover,
+.iphone_container .section .product_options .colors > div.blue_on,
+.iphone_container_of .section .product_options .colors > div.blue_on,
+.iphone_container .section_of .product_options .colors > div.blue_on,
+.iphone_container_of .section_of .product_options .colors > div.blue_on,
+.iphone_container .section .product_options .colors > div.blue_on:hover,
+.iphone_container_of .section .product_options .colors > div.blue_on:hover,
+.iphone_container .section_of .product_options .colors > div.blue_on:hover,
+.iphone_container_of .section_of .product_options .colors > div.blue_on:hover,
+.iphone_container .section .product_options .colors > div.red_on,
+.iphone_container_of .section .product_options .colors > div.red_on,
+.iphone_container .section_of .product_options .colors > div.red_on,
+.iphone_container_of .section_of .product_options .colors > div.red_on,
+.iphone_container .section .product_options .colors > div.red_on:hover,
+.iphone_container_of .section .product_options .colors > div.red_on:hover,
+.iphone_container .section_of .product_options .colors > div.red_on:hover,
+.iphone_container_of .section_of .product_options .colors > div.red_on:hover,
+.iphone_container .section .product_options .colors > div.midnight_on,
+.iphone_container_of .section .product_options .colors > div.midnight_on,
+.iphone_container .section_of .product_options .colors > div.midnight_on,
+.iphone_container_of .section_of .product_options .colors > div.midnight_on,
+.iphone_container .section .product_options .colors > div.midnight_on:hover,
+.iphone_container_of .section .product_options .colors > div.midnight_on:hover,
+.iphone_container .section_of .product_options .colors > div.midnight_on:hover,
+.iphone_container_of .section_of .product_options .colors > div.midnight_on:hover,
+.iphone_container .section .product_options .colors > div.white_on,
+.iphone_container_of .section .product_options .colors > div.white_on,
+.iphone_container .section_of .product_options .colors > div.white_on,
+.iphone_container_of .section_of .product_options .colors > div.white_on,
+.iphone_container .section .product_options .colors > div.white_on:hover,
+.iphone_container_of .section .product_options .colors > div.white_on:hover,
+.iphone_container .section_of .product_options .colors > div.white_on:hover,
+.iphone_container_of .section_of .product_options .colors > div.white_on:hover {
+  border: 2px solid blue;
+}
+
+.iphone_container .section .product_options .colors > div:hover, .iphone_container_of .section .product_options .colors > div:hover, .iphone_container .section_of .product_options .colors > div:hover, .iphone_container_of .section_of .product_options .colors > div:hover {
+  border: 2px solid #a2a2a3;
+}
+
+.iphone_container .section .product_options .colors > div.green span, .iphone_container_of .section .product_options .colors > div.green span, .iphone_container .section_of .product_options .colors > div.green span, .iphone_container_of .section_of .product_options .colors > div.green span,
+.iphone_container .section .product_options .colors > div.green_on span,
+.iphone_container_of .section .product_options .colors > div.green_on span,
+.iphone_container .section_of .product_options .colors > div.green_on span,
+.iphone_container_of .section_of .product_options .colors > div.green_on span {
+  background-color: #083f08;
+}
+
+.iphone_container .section .product_options .colors > div.pink span, .iphone_container_of .section .product_options .colors > div.pink span, .iphone_container .section_of .product_options .colors > div.pink span, .iphone_container_of .section_of .product_options .colors > div.pink span,
+.iphone_container .section .product_options .colors > div.pink_on span,
+.iphone_container_of .section .product_options .colors > div.pink_on span,
+.iphone_container .section_of .product_options .colors > div.pink_on span,
+.iphone_container_of .section_of .product_options .colors > div.pink_on span {
+  background-color: pink;
+}
+
+.iphone_container .section .product_options .colors > div.blue span, .iphone_container_of .section .product_options .colors > div.blue span, .iphone_container .section_of .product_options .colors > div.blue span, .iphone_container_of .section_of .product_options .colors > div.blue span,
+.iphone_container .section .product_options .colors > div.blue_on span,
+.iphone_container_of .section .product_options .colors > div.blue_on span,
+.iphone_container .section_of .product_options .colors > div.blue_on span,
+.iphone_container_of .section_of .product_options .colors > div.blue_on span {
+  background-color: #3ec1e9;
+}
+
+.iphone_container .section .product_options .colors > div.midnight span, .iphone_container_of .section .product_options .colors > div.midnight span, .iphone_container .section_of .product_options .colors > div.midnight span, .iphone_container_of .section_of .product_options .colors > div.midnight span,
+.iphone_container .section .product_options .colors > div.midnight_on span,
+.iphone_container_of .section .product_options .colors > div.midnight_on span,
+.iphone_container .section_of .product_options .colors > div.midnight_on span,
+.iphone_container_of .section_of .product_options .colors > div.midnight_on span {
+  background-color: #303130;
+}
+
+.iphone_container .section .product_options .colors > div.white span, .iphone_container_of .section .product_options .colors > div.white span, .iphone_container .section_of .product_options .colors > div.white span, .iphone_container_of .section_of .product_options .colors > div.white span,
+.iphone_container .section .product_options .colors > div.white_on span,
+.iphone_container_of .section .product_options .colors > div.white_on span,
+.iphone_container .section_of .product_options .colors > div.white_on span,
+.iphone_container_of .section_of .product_options .colors > div.white_on span {
+  background-color: #eaefea;
+}
+
+.iphone_container .section .product_options .colors > div.red_on span, .iphone_container_of .section .product_options .colors > div.red_on span, .iphone_container .section_of .product_options .colors > div.red_on span, .iphone_container_of .section_of .product_options .colors > div.red_on span,
+.iphone_container .section .product_options .colors > div.red span,
+.iphone_container_of .section .product_options .colors > div.red span,
+.iphone_container .section_of .product_options .colors > div.red span,
+.iphone_container_of .section_of .product_options .colors > div.red span {
+  background-color: red;
+}
+
+.iphone_container .section .product_options .product_red, .iphone_container_of .section .product_options .product_red, .iphone_container .section_of .product_options .product_red, .iphone_container_of .section_of .product_options .product_red {
+  margin-top: 10px;
+  border-bottom: 1px solid #bdbbbb;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute !important;
+      justify-content: space-around !important;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 400px;
+}
+
+.iphone_container .section .product_options .product_red > span, .iphone_container_of .section .product_options .product_red > span, .iphone_container .section_of .product_options .product_red > span, .iphone_container_of .section_of .product_options .product_red > span {
+  color: #c90f0f;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.iphone_container .section .product_options .product_red p, .iphone_container_of .section .product_options .product_red p, .iphone_container .section_of .product_options .product_red p, .iphone_container_of .section_of .product_options .product_red p {
+  font-size: 12px;
+  max-width: 250px;
+}
+
+.iphone_container .section .product_options .capacities, .iphone_container_of .section .product_options .capacities, .iphone_container .section_of .product_options .capacities, .iphone_container_of .section_of .product_options .capacities {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 400px;
+}
+
+.iphone_container .section .product_options .capacities div, .iphone_container_of .section .product_options .capacities div, .iphone_container .section_of .product_options .capacities div, .iphone_container_of .section_of .product_options .capacities div {
+  padding: 5px  10px;
+  border: 2px solid #eee;
+  cursor: pointer;
+  -webkit-transition: .3s;
+  transition: .3s;
+  max-width: 180px;
+  max-height: 150px;
+  border-radius: 10px;
+  text-align: center;
+  margin: 10px 7px;
+}
+
+.iphone_container .section .product_options .capacities div span, .iphone_container_of .section .product_options .capacities div span, .iphone_container .section_of .product_options .capacities div span, .iphone_container_of .section_of .product_options .capacities div span {
+  font-size: 29px;
+}
+
+.iphone_container .section .product_options .capacities div span sup, .iphone_container_of .section .product_options .capacities div span sup, .iphone_container .section_of .product_options .capacities div span sup, .iphone_container_of .section_of .product_options .capacities div span sup {
+  font-size: 10px;
+}
+
+.iphone_container .section .product_options .capacities div p, .iphone_container_of .section .product_options .capacities div p, .iphone_container .section_of .product_options .capacities div p, .iphone_container_of .section_of .product_options .capacities div p {
+  font-size: 12px;
+  text-align: start;
+  min-width: 163px;
+}
+
+.iphone_container .section .product_options .capacities div:hover, .iphone_container_of .section .product_options .capacities div:hover, .iphone_container .section_of .product_options .capacities div:hover, .iphone_container_of .section_of .product_options .capacities div:hover {
+  border-color: #a5a5a5;
+}
+
+.iphone_container .section .product_options .capacities div.isOne, .iphone_container_of .section .product_options .capacities div.isOne, .iphone_container .section_of .product_options .capacities div.isOne, .iphone_container_of .section_of .product_options .capacities div.isOne,
+.iphone_container .section .product_options .capacities div.isOne:hover,
+.iphone_container_of .section .product_options .capacities div.isOne:hover,
+.iphone_container .section_of .product_options .capacities div.isOne:hover,
+.iphone_container_of .section_of .product_options .capacities div.isOne:hover,
+.iphone_container .section .product_options .capacities div.isTwo,
+.iphone_container_of .section .product_options .capacities div.isTwo,
+.iphone_container .section_of .product_options .capacities div.isTwo,
+.iphone_container_of .section_of .product_options .capacities div.isTwo,
+.iphone_container .section .product_options .capacities div.isTwo:hover,
+.iphone_container_of .section .product_options .capacities div.isTwo:hover,
+.iphone_container .section_of .product_options .capacities div.isTwo:hover,
+.iphone_container_of .section_of .product_options .capacities div.isTwo:hover,
+.iphone_container .section .product_options .capacities div.isThree,
+.iphone_container_of .section .product_options .capacities div.isThree,
+.iphone_container .section_of .product_options .capacities div.isThree,
+.iphone_container_of .section_of .product_options .capacities div.isThree,
+.iphone_container .section .product_options .capacities div.isThree:hover,
+.iphone_container_of .section .product_options .capacities div.isThree:hover,
+.iphone_container .section_of .product_options .capacities div.isThree:hover,
+.iphone_container_of .section_of .product_options .capacities div.isThree:hover {
+  border-color: blue;
+}
+
+.iphone_container .section .product_options .payOptions, .iphone_container_of .section .product_options .payOptions, .iphone_container .section_of .product_options .payOptions, .iphone_container_of .section_of .product_options .payOptions {
+  max-width: 400px;
+}
+
+.iphone_container .section .product_options .payOptions > div, .iphone_container_of .section .product_options .payOptions > div, .iphone_container .section_of .product_options .payOptions > div, .iphone_container_of .section_of .product_options .payOptions > div {
+  cursor: pointer;
+  max-width: 400px;
+  margin: 10px 0;
+  border: 2px solid #eee;
+  border-radius: 10px;
+  padding: 0px 10px !important;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.iphone_container .section .product_options .payOptions > div span, .iphone_container_of .section .product_options .payOptions > div span, .iphone_container .section_of .product_options .payOptions > div span, .iphone_container_of .section_of .product_options .payOptions > div span {
+  margin-left: 10px;
+}
+
+.iphone_container .section .product_options .payOptions > div div, .iphone_container_of .section .product_options .payOptions > div div, .iphone_container .section_of .product_options .payOptions > div div, .iphone_container_of .section_of .product_options .payOptions > div div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 500;
+}
+
+.iphone_container .section .product_options .payOptions > div div img, .iphone_container_of .section .product_options .payOptions > div div img, .iphone_container .section_of .product_options .payOptions > div div img, .iphone_container_of .section_of .product_options .payOptions > div div img {
+  max-width: 25px !important;
+}
+
+.iphone_container .section .product_options .payOptions > div div p, .iphone_container_of .section .product_options .payOptions > div div p, .iphone_container .section_of .product_options .payOptions > div div p, .iphone_container_of .section_of .product_options .payOptions > div div p {
+  font-size: 15px;
+  margin-left: 10px;
+}
+
+.iphone_container .section .product_options .payOptions > div > ul li, .iphone_container_of .section .product_options .payOptions > div > ul li, .iphone_container .section_of .product_options .payOptions > div > ul li, .iphone_container_of .section_of .product_options .payOptions > div > ul li {
+  font-size: 12px;
+}
+
+.iphone_container .section .product_options .payOptions > div:hover, .iphone_container_of .section .product_options .payOptions > div:hover, .iphone_container .section_of .product_options .payOptions > div:hover, .iphone_container_of .section_of .product_options .payOptions > div:hover {
+  border-color: #a5a5a5;
+}
+
+.iphone_container .section .product_options .payOptions > div.monthly_on, .iphone_container_of .section .product_options .payOptions > div.monthly_on, .iphone_container .section_of .product_options .payOptions > div.monthly_on, .iphone_container_of .section_of .product_options .payOptions > div.monthly_on,
+.iphone_container .section .product_options .payOptions > div.monthly_on:hover,
+.iphone_container_of .section .product_options .payOptions > div.monthly_on:hover,
+.iphone_container .section_of .product_options .payOptions > div.monthly_on:hover,
+.iphone_container_of .section_of .product_options .payOptions > div.monthly_on:hover,
+.iphone_container .section .product_options .payOptions > div.cash_on,
+.iphone_container_of .section .product_options .payOptions > div.cash_on,
+.iphone_container .section_of .product_options .payOptions > div.cash_on,
+.iphone_container_of .section_of .product_options .payOptions > div.cash_on,
+.iphone_container .section .product_options .payOptions > div.cash_on:hover,
+.iphone_container_of .section .product_options .payOptions > div.cash_on:hover,
+.iphone_container .section_of .product_options .payOptions > div.cash_on:hover,
+.iphone_container_of .section_of .product_options .payOptions > div.cash_on:hover {
+  border-color: blue;
+}
+
+.iphone_container .section .product_options .card_label, .iphone_container_of .section .product_options .card_label, .iphone_container .section_of .product_options .card_label, .iphone_container_of .section_of .product_options .card_label {
+  max-width: 400px;
+  background-color: #eee;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.iphone_container .section .product_options .card_label h2, .iphone_container_of .section .product_options .card_label h2, .iphone_container .section_of .product_options .card_label h2, .iphone_container_of .section_of .product_options .card_label h2 {
+  font-weight: 500;
+}
+
+.iphone_container .section .product_options .card_label button, .iphone_container_of .section .product_options .card_label button, .iphone_container .section_of .product_options .card_label button, .iphone_container_of .section_of .product_options .card_label button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: blue;
+  color: white;
+  font-size: 16px;
+  padding: 8px 14px;
+  margin: 20px auto;
+  width: 100%;
+  border-radius: 10px;
+}
+
+@media (max-width: 567px) {
+  .iphone_container .section .product_options .capacities, .iphone_container_of .section .product_options .capacities, .iphone_container .section_of .product_options .capacities, .iphone_container_of .section_of .product_options .capacities {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (max-width: 567px) {
+  .iphone_container .section .product_options .model, .iphone_container_of .section .product_options .model, .iphone_container .section_of .product_options .model, .iphone_container_of .section_of .product_options .model {
+    min-width: 200px;
+    max-width: 400px;
+  }
+  .iphone_container .section .product_options .colors, .iphone_container_of .section .product_options .colors, .iphone_container .section_of .product_options .colors, .iphone_container_of .section_of .product_options .colors {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .iphone_container .section .product_options .colors > div, .iphone_container_of .section .product_options .colors > div, .iphone_container .section_of .product_options .colors > div, .iphone_container_of .section_of .product_options .colors > div {
+    min-width: 140px;
+  }
+}
+
+.iphone_container .section_of, .iphone_container_of .section_of {
+  -webkit-filter: blur(4px);
+          filter: blur(4px);
+}
+
+.iphone_container .bag_review, .iphone_container_of .bag_review, .iphone_container .bag_review_of, .iphone_container_of .bag_review_of {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-right: 25px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 80%;
+  height: 200px;
+  background-color: #eee;
+  border-radius: 10px;
+}
+
+.iphone_container .bag_review > div, .iphone_container_of .bag_review > div, .iphone_container .bag_review_of > div, .iphone_container_of .bag_review_of > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.iphone_container .bag_review > div h3, .iphone_container_of .bag_review > div h3, .iphone_container .bag_review_of > div h3, .iphone_container_of .bag_review_of > div h3 {
+  font-weight: 500;
+}
+
+.iphone_container .bag_review > div img, .iphone_container_of .bag_review > div img, .iphone_container .bag_review_of > div img, .iphone_container_of .bag_review_of > div img {
+  max-width: 100px !important;
+}
+
+.iphone_container .bag_review button, .iphone_container_of .bag_review button, .iphone_container .bag_review_of button, .iphone_container_of .bag_review_of button {
+  width: 20%;
+  padding: 10px 15px;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: blue;
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: 17px;
+}
+
+.iphone_container .bag_review > svg, .iphone_container_of .bag_review > svg, .iphone_container .bag_review_of > svg, .iphone_container_of .bag_review_of > svg {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  max-width: 18px;
+  color: black;
+  cursor: pointer;
+}
+
+@media (max-width: 567px) {
+  .iphone_container .section, .iphone_container_of .section, .iphone_container .section_of, .iphone_container_of .section_of {
+    padding: 10px 20px;
+  }
+  .iphone_container .bag_review, .iphone_container_of .bag_review, .iphone_container .bag_review_of, .iphone_container_of .bag_review_of {
+    width: 97%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .iphone_container .bag_review, .iphone_container_of .bag_review, .iphone_container .bag_review_of, .iphone_container_of .bag_review_of {
+    width: 85%;
+  }
+  .iphone_container .bag_review div div h3, .iphone_container_of .bag_review div div h3, .iphone_container .bag_review_of div div h3, .iphone_container_of .bag_review_of div div h3 {
+    font-size: 17px;
+  }
+  .iphone_container .bag_review button, .iphone_container_of .bag_review button, .iphone_container .bag_review_of button, .iphone_container_of .bag_review_of button {
+    width: 30%;
+    padding: 8px 10px;
+  }
+}
+
+.iphone_container .bag_review_of, .iphone_container_of .bag_review_of {
+  opacity: 0;
+  pointer-events: none;
+}
+/*# sourceMappingURL=iphone.module.css.map */

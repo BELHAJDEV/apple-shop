@@ -1,0 +1,77 @@
+.bag_container{
+    margin-top: 58px;
+    min-height: 100vh -58px;
+    position: relative;
+
+    header {
+        margin: 100px auto 0 auto;
+        text-align: center;
+        // background-color: red
+        width: 80%;
+        border-bottom: 2px solid #eee;
+        padding-bottom: 50px;
+        h1{
+            font-weight: 500;
+        }
+        button{
+            margin-top: 20px;
+            min-width: 200px;
+            width: fit-content;
+            padding: 10px 15px;
+            border: none;
+            outline : none;
+            color: white;
+            background-color: blue;
+            cursor: pointer;
+            border-radius: 10px;
+            font-size: 17px;
+        }
+    }
+
+    section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .product{
+            position: relative;
+            width: 90%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 20px auto;
+            // background-color: #eee;
+            border-bottom: 1px solid #eee;
+            padding-right: 30px;
+            flex-wrap: wrap;
+            img {
+                max-width: 200px !important;
+                
+            }
+            > div{
+                height: 100%;
+                // background-color: red;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 90%;
+                flex: 1;
+
+                h3{
+                    font-weight: 500;
+                }
+                div:last-of-type p{
+                    color: blue;
+                    cursor: pointer;
+                }
+                
+            }
+        }
+        @media (max-width:567px) {
+            .product{
+                flex-direction: column;
+                padding: 0 20px;
+            }
+        }
+    }
+}
