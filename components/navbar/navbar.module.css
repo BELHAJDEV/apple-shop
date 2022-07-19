@@ -255,6 +255,7 @@
   max-height: 100px;
   overflow-y: auto;
   overflow: hidden;
+  opacity: 0;
 }
 .nav_container .right_menu_of .bag_orders div {
   display: flex;
@@ -364,6 +365,15 @@
   align-items: center;
   color: blue;
   cursor: pointer;
+  opacity: 0;
+  -webkit-animation-name: opacityAnimation;
+          animation-name: opacityAnimation;
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 .nav_container .right_menu span > svg {
   margin-right: 10px;
