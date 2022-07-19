@@ -235,7 +235,7 @@
 }
 .nav_container .right_menu_of {
   position: absolute;
-  transition: 0.5s;
+  transition: 0.3s;
   top: 58px;
   background-color: rgb(255, 255, 255);
   display: flex;
@@ -283,7 +283,7 @@
   font-size: 15px;
 }
 .nav_container .right_menu_of span {
-  transition: 0.4s;
+  transition: 0.3s;
 }
 .nav_container .right_menu_of span {
   display: flex;
