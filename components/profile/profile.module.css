@@ -72,6 +72,7 @@
     margin-left: 15px !important;
   }
   .profile_container .order .order_right_zone {
+    margin-left: 15px !important;
     width: 100%;
     flex-direction: column;
     align-items: center;
