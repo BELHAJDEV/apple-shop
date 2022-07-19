@@ -144,7 +144,7 @@
         
     }
     
-    svg{
+    > svg{
         color: rgb(201, 199, 199);
         max-width: 20px !important;
         cursor: pointer;
@@ -279,48 +279,30 @@
         }
     }
     .right_menu_of{
-        // @extend .right_menu;
         position: absolute;
-        width: 25%;
-        height: 0px !important;
-        // min-height: 0;
-        background-color: transparent;
-        top: 55px;
-        top: 0px;
-        transition: .3s;
-        right: 1%;
-        opacity: 0;
-        pointer-events: none;
-        
-        > span{
-            // transition: .3s;
-            opacity: 0;
-            pointer-events: none;
-        }
-    }
-
-    .right_menu{
+        transition: .5s;
+        top: 58px;
+        background-color: rgb(255, 255, 255);
+        // background-color: transparent;
         display: flex;
         flex-direction: column;
-        padding: 10px;
-        position: absolute;
+        justify-content: space-between;
         width: 25%;
-        height: fit-content;
-        background-color: white;
-        top: 65px;
-        transition: .3s;
+        padding: 15px;
         right: 1%;
-        border: 1px solid rgb(170, 168, 168);
+        border: 1px solid rgb(153, 151, 151);
         border-radius: 10px;
-        box-shadow: 0px 10px 38px -11px rgba(0,0,0,0.75);
-        -webkit-box-shadow: 0px 10px 38px -11px rgba(0,0,0,0.75);
-        -moz-box-shadow: 0px 10px 38px -11px rgba(0,0,0,0.75);
-        > svg{
-            color: rgb(41, 69, 210) !important;
-        }
-        > div {
+        height: 0;
+        padding: 0;
+        overflow: hidden;
+        border: none;
+        .bag_orders{
+
             max-height: 100px;
             overflow-y: auto;
+            overflow: hidden;
+            // display: none;
+            
             div{
                 display: flex;
                 justify-content: space-around;
@@ -353,69 +335,128 @@
             border-radius: 7px;
             font-size: 15px;
         }
+        span {
+            transition: .4s;
+            // opacity: 0;
+        }
         span{
-            padding: 10px 0;
-            font-weight: 100;
-            // cursor: pointer;
-            
-            svg{
-                max-width: 15px !important;
-                // cursor: pointer;
+            // padding: 10px 0;
+            display: flex;
+            align-items: center;
+            color: blue;
+            cursor: pointer;
+            > svg {
                 margin-right: 10px;
-                color: rgb(56, 145, 193);
-                text-transform: capitalize;
+                max-width: 15px !important;
 
 
             }
         }
+
         span.empty{
-            padding: 20px 0;
+            color: grey;
             text-align: center;
-            color: gray;
+            border-bottom: 1px solid rgb(218, 217, 217);
+            padding: 20px 0;
             display: flex;
             justify-content: center;
         }
-        span:not(:last-of-type) {
-            border-bottom: 2px solid #eee;
+        
+    }
+    .right_menu{
+        transition: .4s;
+        position: absolute;
+        top: 58px;
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 25%;
+        padding: 15px;
+        right: 1%;
+        border: 1px solid rgb(153, 151, 151);
+        border-radius: 10px;
+        height: 300px;
+        height: 300px;
+        max-height: fit-content;
+        box-shadow: 0px 10px 38px -11px rgba(0,0,0,0.75);
+        -webkit-box-shadow: 0px 10px 38px -11px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 10px 38px -11px rgba(0,0,0,0.75);
+
+        .bag_orders{
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+            max-height: 100px;
+            overflow-y: auto;
+            div{
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                img{
+                    max-width: 50px !important;
+                    
+                }
+                h3{
+                    font-size: 15px;
+                    font-weight: 500;
+                    width: 80%;
+        
+                    
+                }
+                
+            }
+            
         }
-        span:not(:first-of-type) {
+        .bag_orders::-webkit-scrollbar {
+            display: none;
+        }
+        button{
+            margin: 20px auto;
+            // min-width: 200px;
+            width: 80%;
+            padding: 7px 15px;
+            border: none;
+            outline : none;
+            color: white;
+            background-color: blue;
             cursor: pointer;
-            display: flex;
-            align-items: center;
-            color: rgb(99, 99, 253);
-
-
+            border-radius: 7px;
+            font-size: 15px;
         }
         span{
-            
-            padding: 20px 0;
-            cursor: pointer;
+            padding: 10px 0;
             display: flex;
             align-items: center;
-            color: rgb(99, 99, 253);
+            color: blue;
+            cursor: pointer;
+            > svg {
+                margin-right: 10px;
+                max-width: 15px !important;
+
+
+            }
+        }
+
+        span.empty{
+            color: grey;
+            text-align: center;
+            border-bottom: 1px solid rgb(218, 217, 217);
+            padding: 20px 0;
+            
+            display: flex;
+            justify-content: center;
         }
     }
-    @media (max-width : 767px) {
+
+    @media (max-width:767px) {
+        .right_menu,
         .right_menu_of{
             width: 100%;
             right: 0;
-            top: 58px;
-        }
-        .right_menu{
-            padding: 10px 20px;
-            top: 58px;
-            width: 100%;
-            height: 50vh;
-            max-height: 100vh;
-            height: fit-content;
             border: none;
-            right: 0;
-            border-radius: 0px;
-            box-shadow: 0px 10px 38px -11px rgba(0,0,0,0.75);
-            -webkit-box-shadow: 0px 10px 38px -11px rgba(0,0,0,0.75);
-            -moz-box-shadow: 0px 10px 38px -11px rgba(0,0,0,0.75);
         }
     }
+    
     .search_web{
         position: relative;
         form{

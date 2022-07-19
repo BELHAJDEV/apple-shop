@@ -146,7 +146,7 @@ function Navbar(){
             <div className={openRightMenu ? classes.right_menu :  classes.right_menu_of} >
                 {state.bag.length > 0 ? 
                 <>
-                    <div>
+                    <div className={classes.bag_orders}>
                     {state.bag.map((product,i)=> (
                         <div key={i}>
                             <Image src={product.productImage} alt='' />
@@ -185,7 +185,8 @@ function Navbar(){
                         router.replace('/profile')
                         }}>
                         <FontAwesomeIcon icon={faUser} />
-                        {state.user.username}&apos;s profile
+                        
+                        {state.user.username !== '' ? state.user.username+ "'s profile": null}
                     </span>
 
                     <span onClick={logoutHandler}>
