@@ -223,8 +223,8 @@
   opacity: 0;
   -webkit-animation-name: opacityAnimation;
           animation-name: opacityAnimation;
-  -webkit-animation-delay: 0.4s;
-          animation-delay: 0.4s;
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
   -webkit-animation-duration: 0.3s;
           animation-duration: 0.3s;
   -webkit-animation-fill-mode: forwards;
