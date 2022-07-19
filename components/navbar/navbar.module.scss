@@ -315,8 +315,8 @@
         box-shadow: 0px 10px 38px -11px rgba(0,0,0,0.75);
         -webkit-box-shadow: 0px 10px 38px -11px rgba(0,0,0,0.75);
         -moz-box-shadow: 0px 10px 38px -11px rgba(0,0,0,0.75);
-        svg{
-            color: green !important;
+        > svg{
+            color: rgb(41, 69, 210) !important;
         }
         > div {
             max-height: 100px;
@@ -333,6 +333,8 @@
                     font-size: 15px;
                     font-weight: 500;
                     width: 80%;
+        
+                    
                 }
                 
             }
@@ -360,6 +362,10 @@
                 max-width: 15px !important;
                 // cursor: pointer;
                 margin-right: 10px;
+                color: rgb(56, 145, 193);
+                text-transform: capitalize;
+
+
             }
         }
         span.empty{

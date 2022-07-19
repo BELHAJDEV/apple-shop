@@ -268,8 +268,8 @@
   -webkit-box-shadow: 0px 10px 38px -11px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 10px 38px -11px rgba(0, 0, 0, 0.75);
 }
-.nav_container .right_menu svg {
-  color: green !important;
+.nav_container .right_menu > svg {
+  color: rgb(41, 69, 210) !important;
 }
 .nav_container .right_menu > div {
   max-height: 100px;
@@ -307,6 +307,8 @@
 .nav_container .right_menu span svg {
   max-width: 15px !important;
   margin-right: 10px;
+  color: rgb(56, 145, 193);
+  text-transform: capitalize;
 }
 .nav_container .right_menu span.empty {
   padding: 20px 0;

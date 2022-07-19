@@ -133,7 +133,7 @@ function Navbar(){
 
                 <span></span>
                 <div className={classes.menu_items}>
-                    <Link href='/'>Store</Link>
+                    <Link href='/'> Store</Link>
                     <Link href='/'>Mac</Link>
                     <Link href='/'>Ipad</Link>
                     <Link href='/'>Iphone</Link>
