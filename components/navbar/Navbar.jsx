@@ -8,7 +8,7 @@ import { faMagnifyingGlass, faBagShopping,faPaperPlane, faUser, faXmark, faArrow
 import {useRouter} from 'next/router';
 import { Context} from '../../Context';
 import { useSession, signOut } from 'next-auth/react';
-// import ShoppingBagIcon from '@mui/icons-material/ShoppingBag';
+
 
 
 function Navbar(){
@@ -167,7 +167,7 @@ function Navbar(){
                 
                 <span onClick={()=> router.push('/shop/bag')}>
                     <FontAwesomeIcon icon={faBagShopping} />
-                    {/* <ShoppingBagIcon /> */}
+                    <FontAwesomeIcon icon={faPaperPlane} />
                     Bag {state.bag.length > 0 ? `(${state.bag.length})` : ''}
                 </span>
                 {!session ? (
