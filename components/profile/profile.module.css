@@ -69,7 +69,7 @@
   }
   .profile_container .order img {
     max-width: 200px !important;
-    margin-left: 15px;
+    margin-left: 15px !important;
   }
   .profile_container .order .order_right_zone {
     width: 100%;
