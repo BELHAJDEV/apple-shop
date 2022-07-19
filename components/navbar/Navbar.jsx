@@ -167,7 +167,6 @@ function Navbar(){
                 
                 <span onClick={()=> router.push('/shop/bag')}>
                     <FontAwesomeIcon icon={faBagShopping} />
-                    <FontAwesomeIcon icon={faPaperPlane} />
                     Bag {state.bag.length > 0 ? `(${state.bag.length})` : ''}
                 </span>
                 {!session ? (
