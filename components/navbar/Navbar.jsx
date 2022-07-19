@@ -189,7 +189,8 @@ function Navbar(){
                     </span>
 
                     <span onClick={logoutHandler}>
-                        <FontAwesomeIcon icon={faArrowRightFromBracket} />
+                        {<FontAwesomeIcon icon={faArrowRightFromBracket} /> ||
+                        <FontAwesomeIcon icon={faArrowRightFromBracket} />}
                         Logout
                     </span>
                     </>
