@@ -1,19 +1,18 @@
 import React,{useContext, useEffect, useState} from 'react';
 import classes from './profile.module.css';
-import iphone13White from '../../public/images/iphones/iphone-13-white.png';
-import iphone13Red from '../../public/images/iphones/iphone-13-red.png';
-import iphone13Midnight from '../../public/images/iphones/iphone-13-midnight.png';
 import Image from 'next/image';
 import { Context } from '../../Context';
 
 function Profile() {
   const {value1} = useContext(Context);
   const [state,dispatch] = value1;
-  const [user, setUser] = useState('')
+  const [user, setUser] = useState('');
+  const [loading, setLoading] = useState(true);
+
   async function getOrders(){
 
     if(state.user.username !== ""){
-      
+      setLoading(true)
       const result = await fetch('/api/myorders',{
         method : 'POST',
         body : JSON.stringify({email :  state.user.email}),
@@ -23,13 +22,13 @@ function Profile() {
       });
     
       const data = await result.json();
-      console.log(data.orders);
       
       await dispatch({
         type : 'ADD_MYORDERS',
         payload :  data.orders
       })
       // setUser(data)
+      setLoading(false)
     }
     
   }
@@ -37,13 +36,17 @@ function Profile() {
     getOrders();
   },[state.user.email])
   
+  if(loading){
+    return <p className={classes.text}>Loading ...</p>
+  }
+
   return (
     <div className={classes.profile_container}>
       {state.myOrders.length > 0 ? (
         state.myOrders.map((order,i)=> (
-          <div className={classes.product} key={i}>
+          <div className={classes.order} key={i}>
             <Image src={order.productImage} alt='img' />
-            <div className={classes.product_right_zone}>
+            <div className={classes.order_right_zone}>
                 <div>
                             
                     <h3>{order.productName} {order.productCapacity}GB {order.productColor}</h3>
@@ -52,9 +55,9 @@ function Profile() {
                     
                 </div>
                 <div>
-                    <h3>{!order.isMonhtly ? order.productPrice : order.monthlyPrice + 'per month'}</h3>
+                    <h3 className={classes.price}>{!order.isMonhtly ? order.productPrice : order.monthlyPrice + ' per month'}</h3>
                     
-                    <p>{order.date}</p>
+                    <p>{ new Date(order.date).getDate()}-{ new Date(order.date).getMonth()+1}-{ new Date(order.date).getFullYear()}</p>
                 </div>
 
             </div>

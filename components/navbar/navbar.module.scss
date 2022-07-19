@@ -205,7 +205,7 @@
             position: relative;
             transition: opacity .3s;
             animation-name: opacityAnimation;
-            animation-delay: .5s;
+            animation-delay: .3s;
             animation-duration: .3s;
             animation-fill-mode: forwards;
             
@@ -268,7 +268,7 @@
                 transition: opacity .3s;
                 opacity: 0;
                 animation-name: opacityAnimation;
-                animation-delay: .6s;
+                animation-delay: .4s;
                 animation-duration: .5s;
                 animation-fill-mode: forwards;
             }
@@ -279,14 +279,15 @@
         }
     }
     .right_menu_of{
-        @extend .right_menu;
+        // @extend .right_menu;
         position: absolute;
         width: 25%;
-        height: 0vh;
-        min-height: 0;
+        height: 0px !important;
+        // min-height: 0;
         background-color: transparent;
         top: 55px;
-        transition: .5s;
+        top: 0px;
+        transition: .3s;
         right: 1%;
         opacity: 0;
         pointer-events: none;
@@ -304,16 +305,10 @@
         padding: 10px;
         position: absolute;
         width: 25%;
-        // height: 100vh;
-        // max-height: 50vh;
-        // max-height: 50vh;
-
         height: fit-content;
-        // max-height: 300px;
-        // background-color: rgb(186, 185, 185);
         background-color: white;
         top: 65px;
-        transition: .5s;
+        transition: .3s;
         right: 1%;
         border: 1px solid rgb(170, 168, 168);
         border-radius: 10px;

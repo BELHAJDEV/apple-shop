@@ -3,10 +3,10 @@ import classes from './chekout.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheck } from '@fortawesome/free-solid-svg-icons';
 import { Context } from '../../Context';
-import { getSession } from 'next-auth/react';
+import { useRouter } from 'next/router';
 
 const CheckOut = () => {
-
+    const router = useRouter();
     const {value1} = useContext(Context);
     const [state, dispatch] = value1;
 
@@ -25,7 +25,7 @@ const CheckOut = () => {
             type : 'EMPTY_BAG',
         })
 
-        
+        router.replace('/')
     }
   return (
     <div className={classes.wraper}>

@@ -160,8 +160,8 @@
   transition: opacity 0.3s;
   -webkit-animation-name: opacityAnimation;
           animation-name: opacityAnimation;
-  -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s;
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
   -webkit-animation-duration: 0.3s;
           animation-duration: 0.3s;
   -webkit-animation-fill-mode: forwards;
@@ -223,8 +223,8 @@
   opacity: 0;
   -webkit-animation-name: opacityAnimation;
           animation-name: opacityAnimation;
-  -webkit-animation-delay: 0.6s;
-          animation-delay: 0.6s;
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
   -webkit-animation-duration: 0.5s;
           animation-duration: 0.5s;
   -webkit-animation-fill-mode: forwards;
@@ -236,11 +236,11 @@
 .nav_container .right_menu_of {
   position: absolute;
   width: 25%;
-  height: 0vh;
-  min-height: 0;
+  height: 0px !important;
   background-color: transparent;
   top: 55px;
-  transition: 0.5s;
+  top: 0px;
+  transition: 0.3s;
   right: 1%;
   opacity: 0;
   pointer-events: none;
@@ -249,7 +249,7 @@
   opacity: 0;
   pointer-events: none;
 }
-.nav_container .right_menu, .nav_container .right_menu_of {
+.nav_container .right_menu {
   display: flex;
   flex-direction: column;
   padding: 10px;
@@ -260,7 +260,7 @@
   height: fit-content;
   background-color: white;
   top: 65px;
-  transition: 0.5s;
+  transition: 0.3s;
   right: 1%;
   border: 1px solid rgb(170, 168, 168);
   border-radius: 10px;
@@ -268,27 +268,27 @@
   -webkit-box-shadow: 0px 10px 38px -11px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 10px 38px -11px rgba(0, 0, 0, 0.75);
 }
-.nav_container .right_menu svg, .nav_container .right_menu_of svg {
+.nav_container .right_menu svg {
   color: blue;
 }
-.nav_container .right_menu > div, .nav_container .right_menu_of > div {
+.nav_container .right_menu > div {
   max-height: 100px;
   overflow-y: auto;
 }
-.nav_container .right_menu > div div, .nav_container .right_menu_of > div div {
+.nav_container .right_menu > div div {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-.nav_container .right_menu > div div img, .nav_container .right_menu_of > div div img {
+.nav_container .right_menu > div div img {
   max-width: 50px !important;
 }
-.nav_container .right_menu > div div h3, .nav_container .right_menu_of > div div h3 {
+.nav_container .right_menu > div div h3 {
   font-size: 15px;
   font-weight: 500;
   width: 80%;
 }
-.nav_container .right_menu button, .nav_container .right_menu_of button {
+.nav_container .right_menu button {
   margin: 20px auto;
   width: 80%;
   padding: 7px 15px;
@@ -300,31 +300,31 @@
   border-radius: 7px;
   font-size: 15px;
 }
-.nav_container .right_menu span, .nav_container .right_menu_of span {
+.nav_container .right_menu span {
   padding: 10px 0;
   font-weight: 100;
 }
-.nav_container .right_menu span svg, .nav_container .right_menu_of span svg {
+.nav_container .right_menu span svg {
   max-width: 15px !important;
   margin-right: 10px;
 }
-.nav_container .right_menu span.empty, .nav_container .right_menu_of span.empty {
+.nav_container .right_menu span.empty {
   padding: 20px 0;
   text-align: center;
   color: gray;
   display: flex;
   justify-content: center;
 }
-.nav_container .right_menu span:not(:last-of-type), .nav_container .right_menu_of span:not(:last-of-type) {
+.nav_container .right_menu span:not(:last-of-type) {
   border-bottom: 2px solid #eee;
 }
-.nav_container .right_menu span:not(:first-of-type), .nav_container .right_menu_of span:not(:first-of-type) {
+.nav_container .right_menu span:not(:first-of-type) {
   cursor: pointer;
   display: flex;
   align-items: center;
   color: rgb(99, 99, 253);
 }
-.nav_container .right_menu span, .nav_container .right_menu_of span {
+.nav_container .right_menu span {
   padding: 20px 0;
   cursor: pointer;
   display: flex;
@@ -337,7 +337,7 @@
     right: 0;
     top: 58px;
   }
-  .nav_container .right_menu, .nav_container .right_menu_of {
+  .nav_container .right_menu {
     padding: 10px 20px;
     top: 58px;
     width: 100%;
