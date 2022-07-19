@@ -269,7 +269,7 @@
                 opacity: 0;
                 animation-name: opacityAnimation;
                 animation-delay: .4s;
-                animation-duration: .5s;
+                animation-duration: .3s;
                 animation-fill-mode: forwards;
             }
             a:not(:last-of-type){
@@ -432,7 +432,7 @@
             opacity: 0;
             animation-name: opacityAnimation;
             animation-delay: .4s;
-            animation-duration: .5s;
+            animation-duration: .3s;
             animation-fill-mode: forwards;
             > svg {
                 margin-right: 10px;
