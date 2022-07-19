@@ -2,7 +2,6 @@ import NextAuth from "next-auth";
 import CredentialsProvider from "next-auth/providers/credentials";
 import { connectToDatabase } from '../../../lib/db';
 import { compare } from 'bcryptjs';
-
 export default NextAuth({
     session : {
         jwt : true
@@ -38,4 +37,13 @@ export default NextAuth({
         })
     ],
     secret: process.env.NEXTAUTH_SECRET,
+    // adapter: TypeORMLegacyAdapter({
+    //     type: 'mongodb',
+    //     username: process.env.mongodb_username,
+    //     password: process.env.mongodb_password,
+    //     host: process.env.host,
+    //     database: process.env.mongodb_database,
+    //     synchronize: false
+    //   }),
+    
 })

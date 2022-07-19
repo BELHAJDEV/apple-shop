@@ -59,7 +59,9 @@ const Iphone = () => {
             monthlyPrice,
             productImage,
             isMonhtly,
-            isCash
+            isCash,
+            clientEmail : state.user.email,
+            date : Date.now()
              
         }
     

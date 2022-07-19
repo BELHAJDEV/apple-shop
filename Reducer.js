@@ -3,6 +3,7 @@ import { faAnchorCircleExclamation } from "@fortawesome/free-solid-svg-icons"
 
 export const initialState = {
     bag : [],
+    myOrders : [],
     user : {
         username : '',
         email : ''
@@ -39,6 +40,12 @@ export const reducer = (state,action) =>{
                 ...state,
                 bag : []
             }
+        case 'ADD_MYORDERS' :{
+            return {
+                ...state,
+                myOrders : action.payload
+            }
+        }
         default : {
             return {
                 state

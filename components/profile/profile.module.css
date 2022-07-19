@@ -1,0 +1,46 @@
+.profile_container {
+  width: 100%;
+  margin-top: 60px;
+  min-height: calc(100vh - 58px);
+}
+.profile_container .product {
+  position: relative;
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px auto;
+  border-bottom: 1px solid #eee;
+  padding-right: 30px;
+  flex-wrap: wrap;
+}
+.profile_container .product img {
+  max-width: 200px !important;
+}
+.profile_container .product > div {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  flex: 1;
+}
+.profile_container .product > div h3 {
+  font-weight: 500;
+}
+@media (max-width: 767px) {
+  .profile_container .product > div h3 {
+    font-size: 17px;
+  }
+}
+.profile_container .product .product_right_zone {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (max-width: 567px) {
+  .profile_container .product {
+    flex-direction: column;
+    padding: 0 20px;
+  }
+}/*# sourceMappingURL=profile.module.css.map */

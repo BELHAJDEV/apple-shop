@@ -33,9 +33,10 @@ function Navbar(){
     function logoutHandler(event){
 
         event.preventDefault();
+        router.replace('/')
+
         setOpenRightMenu(false);
         signOut();
-        router.replace('/')
     }
     async function getUsername(){
         if(session){
@@ -179,7 +180,10 @@ function Navbar(){
                     </span>
                 ):(
                     <>
-                    <span>
+                    <span onClick={()=> {
+                        setOpenRightMenu(false);
+                        router.replace('/profile')
+                        }}>
                         <FontAwesomeIcon icon={faUser} />
                         {state.user.username}&apos;s profile
                     </span>
