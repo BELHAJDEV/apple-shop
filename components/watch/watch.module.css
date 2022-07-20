@@ -103,6 +103,9 @@
   color: blue;
 }
 @media (max-width: 567px) {
+  .watch_container section .features {
+    width: 90%;
+  }
   .watch_container section .products {
     width: 90%;
     justify-content: center;

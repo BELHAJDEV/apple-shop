@@ -123,6 +123,9 @@
         }
 
         @media (max-width : 567px) {
+            .features{
+                width: 90%;
+            }
             .products{
                 width: 90%;
                 justify-content: center;
