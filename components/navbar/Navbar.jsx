@@ -169,7 +169,7 @@ function Navbar(){
                     <FontAwesomeIcon icon={faBagShopping} />
                     Bag {state.bag.length > 0 ? `(${state.bag.length})` : ''}
                 </span>
-                {!session && state.user.username !== '' ? (
+                {!session ? (
                     <span onClick={()=> 
                         {
                             setOpenRightMenu(false);
