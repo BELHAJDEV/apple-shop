@@ -169,7 +169,7 @@ function Navbar(){
                     <FontAwesomeIcon icon={faBagShopping} />
                     Bag {state.bag.length > 0 ? `(${state.bag.length})` : ''}
                 </span>
-                {!session ? (
+                {!session && state.user.username !== '' ? (
                     <span onClick={()=> 
                         {
                             setOpenRightMenu(false);
@@ -186,7 +186,7 @@ function Navbar(){
                         }}>
                         <FontAwesomeIcon icon={faUser} />
                         
-                        {state.user.username !== '' ? state.user.username+ "'s profile": null}
+                        {state.user.username+ "'s profile"}{state.user.isAdmin ? "(Admin)" : null}
                     </span>
 
                     <span onClick={logoutHandler}>

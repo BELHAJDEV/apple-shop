@@ -28,7 +28,10 @@ function Profile() {
         payload :  data.orders
       })
       // setUser(data)
-      setLoading(false)
+      setLoading(false);
+      console.log(data.orders);
+      console.log(state.myOrders)
+      
     }
     
   }
@@ -38,6 +41,36 @@ function Profile() {
   
   if(loading){
     return <p className={classes.text}>Loading ...</p>
+  }
+
+  if(state.user.isAdmin){
+    return <div className={classes.admin_profile_container}>
+     <div className={classes.header}>
+        <span>Product Image</span>
+        <span>Product Name</span>
+        <span>Product Color</span>
+        <span>Product Capacity</span>
+        <span>Product Price</span>
+        {/* <span>Payment option</span> */}
+        <span>Order date</span>
+      </div>
+      
+    {state.myOrders.map((order,i)=> {
+      return (
+        <div className={classes.order} key={i}>
+        <span>
+          <Image src={order.productImage} alt='image' />
+        </span>
+        <span>{order.productName}</span>
+        <span>{order.productColor}</span>
+        <span>{order.productCapacity}</span>
+        <span>{order.productPrice}</span>
+        <span>{new Date(order.date).getDate()+'-'+ new Date(order.date).getMonth()+1+'-'+new Date(order.date).getFullYear()}</span>
+      </div>
+      )
+      
+    })}
+    </div>
   }
 
   return (
@@ -65,7 +98,7 @@ function Profile() {
         ))
       ) : <p>No orders</p>}
         
-
+        
         
         
     </div>

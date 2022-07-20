@@ -17,8 +17,10 @@ async function handler(req, res){
 
         res.status(201).json({
             user : {
+                id : user._id.toString(),
                 username : user.username, 
-                email : user.email
+                email : user.email,
+                isAdmin : user.isAdmin
             }});
         client.close();
     }
