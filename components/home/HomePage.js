@@ -36,7 +36,7 @@ function HomePage(props){
                 <h2>It&apos;s our latgest display yet.</h2>
                 <div>
                     <Link href='/'>Learn more &gt;</Link>
-                    <Link href='/'>Buy &gt;</Link>
+                    <Link href='/watch'>Buy &gt;</Link>
                 </div>
                 
                 <Image src={AppleWatch} alt='apple watch series 7'/>

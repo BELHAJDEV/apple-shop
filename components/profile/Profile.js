@@ -29,8 +29,7 @@ function Profile() {
       })
       // setUser(data)
       setLoading(false);
-      console.log(data.orders);
-      console.log(state.myOrders)
+      
       
     }
     
@@ -64,7 +63,7 @@ function Profile() {
         <span>{order.productName}</span>
         <span>{order.productColor}</span>
         <span>{order.productCapacity}</span>
-        <span>{order.productPrice}</span>
+        <span className={classes.order_price}>{order.productPrice}</span>
         <span>{new Date(order.date).getDate()+'-'+ new Date(order.date).getMonth()+1+'-'+new Date(order.date).getFullYear()}</span>
       </div>
       )

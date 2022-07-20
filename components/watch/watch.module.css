@@ -1,0 +1,113 @@
+.watch_container {
+  margin-top: 58px;
+  position: relative;
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  transition: 0.3s;
+  max-width: 100vw;
+  overflow: hidden;
+}
+.watch_container header {
+  position: fixed;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+  justify-content: space-around;
+  background-color: white;
+  width: 100%;
+  height: 45px;
+}
+.watch_container header h3 {
+  font-weight: 400;
+  color: rgb(47, 47, 47);
+}
+@media (max-width: 767px) {
+  .watch_container header h3 {
+    text-align: center;
+  }
+}
+.watch_container section {
+  position: relative;
+  margin-top: 70px;
+}
+.watch_container section > h2 {
+  text-align: center;
+}
+.watch_container section .features {
+  width: 70%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  border-bottom: 1px solid #eee;
+}
+.watch_container section .features > div {
+  display: flex;
+  flex-direction: column;
+  max-width: 200px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.watch_container section .features > div span {
+  font-size: 15px;
+  font-weight: 600;
+}
+.watch_container section .features > div span img {
+  max-width: 20px !important;
+  background-color: red !important;
+  cursor: pointer;
+}
+.watch_container section .features > div p {
+  font-size: 14px;
+  color: rgb(155, 154, 154);
+}
+.watch_container section .products {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  margin: 30px auto;
+  flex-wrap: wrap;
+  position: relative;
+}
+.watch_container section .products > div {
+  text-align: center;
+  position: relative;
+  margin: 20px 0;
+  cursor: pointer;
+}
+.watch_container section .products > div span img {
+  transition: 0.3s;
+  max-width: 300px !important;
+}
+.watch_container section .products > div span img:hover {
+  transform: rotateY(20deg);
+}
+.watch_container section .products > div h3 {
+  transition: 0.3s;
+  max-width: 200px;
+  margin: 0 auto;
+  font-weight: 500;
+  font-size: 16px;
+  text-transform: capitalize;
+  text-align: center;
+}
+.watch_container section .products > div > span:last-of-type {
+  color: gray;
+  margin-top: 10px;
+}
+.watch_container section .products > div:hover h3 {
+  color: blue;
+}
+@media (max-width: 567px) {
+  .watch_container section .products {
+    width: 90%;
+    justify-content: center;
+  }
+  .watch_container section .products > div {
+    background-color: gray;
+  }
+}/*# sourceMappingURL=watch.module.css.map */

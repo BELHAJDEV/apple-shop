@@ -105,12 +105,13 @@
 
 .admin_profile_container{
   width: 100%;
-  margin-top: 60px;
+  margin-top: 58px;
   // min-height: calc(100vh - 60px);
   height: fit-content;
   // position: relative;
   max-width: 100vw;
   overflow-x: auto;
+  border: 1px solid #eee;
   .header{
     width: 100%;
     border-bottom: 1px solid #eee;
@@ -145,7 +146,9 @@
     justify-content: space-evenly;
     // overflow-x: auto;
     
-
+      .order_price{
+        color: rgb(56, 192, 56);
+      }
     
       span {
         border-right: 1px solid #eee;
@@ -162,9 +165,13 @@
 
         
       }
-      span:hover {
-        background-color: #eee;
+      
+      @media (min-width:568px) {
+        span:hover {
+          background-color: #eee;
+        }
       }
+      
       img {
         max-width: 50px !important;
       }
