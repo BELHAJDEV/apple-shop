@@ -125,6 +125,10 @@
         @media (max-width : 567px) {
             .features{
                 width: 90%;
+                > div{
+                max-width: 300px;
+
+                }
             }
             .products{
                 width: 90%;

@@ -106,6 +106,9 @@
   .watch_container section .features {
     width: 90%;
   }
+  .watch_container section .features > div {
+    max-width: 300px;
+  }
   .watch_container section .products {
     width: 90%;
     justify-content: center;
