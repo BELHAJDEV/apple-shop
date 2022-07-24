@@ -84,7 +84,7 @@
 }
 
 .admin_profile_container {
-  width: 100%;
+  min-width: 100%;
   margin-top: 58px;
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -94,14 +94,14 @@
   border: 1px solid #eee;
 }
 .admin_profile_container .header {
-  width: 100%;
-  border-bottom: 1px solid #eee;
+  min-width: 100vw;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 .admin_profile_container .header span {
   text-align: center;
   border-right: 1px solid #eee;
+  border-bottom: 1px solid #eee;
   padding: 10px;
   transition: 0.3s;
   width: 100%;
@@ -115,15 +115,15 @@
 }
 .admin_profile_container .order {
   width: 100%;
-  border-bottom: 1px solid #eee;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 .admin_profile_container .order .order_price {
   color: rgb(56, 192, 56);
 }
 .admin_profile_container .order span {
   border-right: 1px solid #eee;
+  border-bottom: 1px solid #eee;
   padding: 10px;
   transition: 0.3s;
   width: 100%;
@@ -132,6 +132,7 @@
   justify-content: center;
   width: 200px;
   text-align: center;
+  height: 80px;
 }
 @media (min-width: 568px) {
   .admin_profile_container .order span:hover {

@@ -360,6 +360,7 @@
   font-size: 15px;
 }
 .nav_container .right_menu span {
+  text-transform: capitalize;
   padding: 10px 0;
   display: flex;
   align-items: center;

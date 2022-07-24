@@ -27,7 +27,7 @@ function HomePage(props){
                 
             </div>
 
-            <div>
+            {/* <div>
                 <h1>
                 <Image src={AppleIcon} alt='Apple icon' />
                 Watch
@@ -57,7 +57,7 @@ function HomePage(props){
                 
                 <Image src={MacIpad} alt='Mac & ipad'/>
                 
-            </div>
+            </div> */}
         </div>
     )
 }

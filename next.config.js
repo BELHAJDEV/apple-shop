@@ -7,7 +7,7 @@ module.exports = {
     mongodb_clustername : 'apple-shop-nextjs-clust',
     mongodb_database : 'Apple-Shop',
     NEXTAUTH_SECRET : 'apple-nextjs',
-    NEXTAUTH_URL : 'https://apple-shop-zeta.vercel.app/api/auth',
+    NEXTAUTH_URL : 'https://apple-shop-two.vercel.app/api/auth',
   
   }
 }

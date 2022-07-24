@@ -45,7 +45,7 @@
         .features{
             width: 70%;
             display: flex;
-            // align-items: center;
+            align-items: flex-start;
             justify-content: space-evenly;
             flex-wrap: wrap;
             margin: 0 auto;
@@ -53,13 +53,17 @@
             > div {
                 display: flex;
                 flex-direction: column;
+                // background-color: #eee;
                 max-width: 200px;
-                height: fit-content;
+                
+                // height: 300px;
+                // background-color: red;
                 span {
                     font-size: 15px;
                     font-weight: 600;
                     img{
-                        max-width: 20px !important;
+                        width: 20px !important;
+                        height: 23px !important;
                         background-color: red !important;
                         cursor: pointer;
                     }
@@ -70,6 +74,12 @@
                     font-size: 14px;
                     color: rgb(155, 154, 154);
                 }
+
+                .fast_icon{
+                    img{
+                        width: 16px !important;
+                    }
+                }
             }
         }
 
@@ -77,6 +87,7 @@
             width: 80%;
             display: flex;
             justify-content: center;
+            align-items: center;
             margin: 30px auto;
             flex-wrap: wrap;
             position: relative;

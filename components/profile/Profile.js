@@ -64,7 +64,7 @@ function Profile() {
         <span>{order.productColor}</span>
         <span>{order.productCapacity}</span>
         <span className={classes.order_price}>{order.productPrice}</span>
-        <span>{new Date(order.date).getDate()+'-'+ new Date(order.date).getMonth()+1+'-'+new Date(order.date).getFullYear()}</span>
+        <span>{new Date(order.date).getDate()+'-'+ (new Date(order.date).getMonth()+1)  + '-'+new Date(order.date).getFullYear()}</span>
       </div>
       )
       
@@ -89,7 +89,7 @@ function Profile() {
                 <div>
                     <h3 className={classes.price}>{!order.isMonhtly ? order.productPrice : order.monthlyPrice + ' per month'}</h3>
                     
-                    <p>{ new Date(order.date).getDate()}-{ new Date(order.date).getMonth()+1}-{ new Date(order.date).getFullYear()}</p>
+                    <p>{ new Date(order.date).getDate()}-{ new Date(order.date).getMonth() + 1}-{ new Date(order.date).getFullYear()}</p>
                 </div>
 
             </div>

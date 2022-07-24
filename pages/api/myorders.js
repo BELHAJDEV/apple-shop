@@ -15,7 +15,7 @@ async function handler(req, res){
         const user = await db.collection('users').findOne({email});
 
         if(user.isAdmin){
-            let orders = await ordersCollection.find().sort('-date').toArray();
+            let orders = await ordersCollection.find().sort({date : -1}).toArray();
             res.status(201).json({orders : orders});
             client.close();
         }else{

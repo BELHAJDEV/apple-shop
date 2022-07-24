@@ -1,5 +1,5 @@
 import React from 'react'
-import Watch from '../components/watch/Watch'
+import Watch from '../../components/watch/Watch'
 
 function watch() {
   return (

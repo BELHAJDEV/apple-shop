@@ -104,7 +104,7 @@
 
 
 .admin_profile_container{
-  width: 100%;
+  min-width: 100%;
   margin-top: 58px;
   // min-height: calc(100vh - 60px);
   height: fit-content;
@@ -113,14 +113,16 @@
   overflow-x: auto;
   border: 1px solid #eee;
   .header{
-    width: 100%;
-    border-bottom: 1px solid #eee;
+    min-width: 100vw;
+    // border-bottom: 1px solid #eee;
     display: flex;
-    justify-content: space-evenly;
-    
+    justify-content: space-between;
+    // background-color: blue;
+
     span {
       text-align: center;
       border-right: 1px solid #eee;
+      border-bottom: 1px solid #eee;
       padding: 10px;
       transition: .3s;
       width: 100%;
@@ -141,9 +143,10 @@
     width: 100%;
     // background-color: tomato;
     // max-width: 100vw;
-    border-bottom: 1px solid #eee;
+    // border-bottom: 1px solid #eee;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    // align-items: center;
     // overflow-x: auto;
     
       .order_price{
@@ -152,6 +155,7 @@
     
       span {
         border-right: 1px solid #eee;
+        border-bottom: 1px solid #eee;
         padding: 10px;
         transition: .3s;
         width: 100%;
@@ -162,9 +166,11 @@
         // min-width: fit-content;
         width: 200px;
         text-align: center;
+        height: 80px;
 
         
       }
+      
       
       @media (min-width:568px) {
         span:hover {

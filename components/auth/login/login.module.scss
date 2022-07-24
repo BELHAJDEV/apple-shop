@@ -15,7 +15,7 @@
     align-items: center;
 
     form{
-        // min-width: 90%;
+        // min-width: 100%;
         // max-width: 90%;
         position: relative;
         z-index: 1;
@@ -64,25 +64,41 @@
             border-radius: 7px;
         }
     }
-
-    @media (max-width:567px) {
-        form{
-            min-width: 90%;
-        }
-    }
-    @media (max-width:767px) {
-        form{
-            min-width: 80%;
-        }
-    }
-    @media (max-width:992px) {
-        form{
-            min-width: 70%;
-        }
-    }
+    // > div {
+    //     width: 90%;
+    //     background-color: rgb(94, 91, 91);
+    // }
     @media (min-width:993px) {
         form{
-            min-width: 50%;
+            width: 40%;
+            
         }
     }
+    
+    @media (max-width:992px) {
+        form{
+            width: 40%;
+        }
+    }
+    
+
+    @media (max-width:767px) {
+        form{
+            width: 70%;
+        }
+    }
+    @media (max-width:567px) {
+        form{
+
+            width: 90%;
+            
+        }
+    }
+
+    
+}
+
+.loading{
+    text-align: center;
+    margin-top: 70px;
 }

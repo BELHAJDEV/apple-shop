@@ -12,10 +12,13 @@ import watch2r from '../../public/images/watch-2-r.jpg';
 import watch3 from '../../public/images/watch-3.jpg';
 import watch3r from '../../public/images/watch-3-r.jpg';
 import Image from 'next/image';
+import {useRouter} from 'next/router';
 
 function Watch() {
-  return (
-    <div className={classes.watch_container}>
+
+    const router = useRouter();
+    return (
+        <div className={classes.watch_container}>
         <header>
             <h3>Apple Watch Series 7</h3>
         </header>
@@ -42,7 +45,7 @@ function Watch() {
                 </p>
             </div>
             <div>
-                <span>
+                <span className={classes.fast_icon}>
                     <Image src={icon3} alt='icon 1' />
                 </span>
                 <span>Fast Charging</span>
@@ -63,7 +66,7 @@ function Watch() {
         </div>
 
         <div className={classes.products}>
-            <div>
+            <div onClick={()=> router.replace('/watch/shop')}>
                 <span>
                     <Image src={watch3r} alt="img" />
                 </span>
@@ -75,24 +78,24 @@ function Watch() {
                 <span>MORE BAND COLORS</span>
             </div>
 
-            <div>
+            <div onClick={()=> router.replace('/watch/shop')}>
                 
                 <span>
                     <Image src={watch2r} alt="img" />
                 </span>
-                <h3>Silver Stainless Steel Case with sport loop</h3>
+                <h3>Starlight Aluminum Case with Brainded Solo Loop</h3>
                 <p>
-                    From $699
+                    From $449
                 </p> 
                 <spn>MORE BAND COLORS</spn>
             </div>
-            <div>
+            <div onClick={()=> router.replace('/watch/shop')}>
                 <span>
                     <Image src={watch1} alt="img" />
                 </span>
-                <h3>Silver Stainless Steel Case with sport loop</h3>
+                <h3>Midnight Stainless Aluminum Case With Solo Loop</h3>
                 <p>
-                    From $699
+                    From $399
                 </p> 
                 <spn>MORE BAND COLORS</spn>
             </div>

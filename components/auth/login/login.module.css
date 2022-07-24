@@ -54,23 +54,28 @@
   font-size: 16px;
   border-radius: 7px;
 }
-@media (max-width: 567px) {
+@media (min-width: 993px) {
   .login_container form {
-    min-width: 90%;
-  }
-}
-@media (max-width: 767px) {
-  .login_container form {
-    min-width: 80%;
+    width: 40%;
   }
 }
 @media (max-width: 992px) {
   .login_container form {
-    min-width: 70%;
+    width: 40%;
   }
 }
-@media (min-width: 993px) {
+@media (max-width: 767px) {
   .login_container form {
-    min-width: 50%;
+    width: 70%;
   }
+}
+@media (max-width: 567px) {
+  .login_container form {
+    width: 90%;
+  }
+}
+
+.loading {
+  text-align: center;
+  margin-top: 70px;
 }/*# sourceMappingURL=login.module.css.map */

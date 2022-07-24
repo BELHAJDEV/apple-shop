@@ -39,6 +39,7 @@
 .watch_container section .features {
   width: 70%;
   display: flex;
+  align-items: flex-start;
   justify-content: space-evenly;
   flex-wrap: wrap;
   margin: 0 auto;
@@ -48,16 +49,14 @@
   display: flex;
   flex-direction: column;
   max-width: 200px;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
 }
 .watch_container section .features > div span {
   font-size: 15px;
   font-weight: 600;
 }
 .watch_container section .features > div span img {
-  max-width: 20px !important;
+  width: 20px !important;
+  height: 23px !important;
   background-color: red !important;
   cursor: pointer;
 }
@@ -65,10 +64,14 @@
   font-size: 14px;
   color: rgb(155, 154, 154);
 }
+.watch_container section .features > div .fast_icon img {
+  width: 16px !important;
+}
 .watch_container section .products {
   width: 80%;
   display: flex;
   justify-content: center;
+  align-items: center;
   margin: 30px auto;
   flex-wrap: wrap;
   position: relative;
